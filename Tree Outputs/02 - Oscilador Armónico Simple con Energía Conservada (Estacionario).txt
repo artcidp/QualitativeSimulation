@@ -1,2 +1,0 @@
-(-1, 0):{'t': ⟨t0, None⟩, 'x': ⟨0, None⟩, 'vx': ⟨0, None⟩, 'ax': ⟨0, None⟩, 'dt': ⟨None, None⟩, 'K': ⟨None, None⟩, 'U': ⟨0, None⟩, 'E': ⟨0, None⟩} 
-╰── (0, 0):{'t': ⟨t0, inc⟩, 'x': ⟨0, std⟩, 'vx': ⟨0, std⟩, 'ax': ⟨0, std⟩, 'dt': ⟨1, std⟩, 'K': ⟨0, std⟩, 'U': ⟨0, std⟩, 'E': ⟨0, std⟩} 

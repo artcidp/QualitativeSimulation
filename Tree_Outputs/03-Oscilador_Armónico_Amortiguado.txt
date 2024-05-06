@@ -1,0 +1,109 @@
+(-1, 0):{'t': ⟨t0, None⟩, 'dt': ⟨None, None⟩, 'x': ⟨x0, None⟩, 'vx': ⟨0, None⟩, 'ax': ⟨ax0, None⟩, 'f(x)': ⟨fx0, None⟩, 'g(vx)': ⟨0, None⟩} 
+╰── (0, 0):{'t': ⟨t0, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨x0, std⟩, 'vx': ⟨0, dec⟩, 'ax': ⟨ax0, inc⟩, 'f(x)': ⟨fx0, std⟩, 'g(vx)': ⟨0, inc⟩} 
+    ╰── (1, 0):{'t': ⟨(t0, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(-inf, 0), dec⟩, 'ax': ⟨(ax0, 0), inc⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, inf), inc⟩} 
+        ╰── (2, 0):{'t': ⟨t1, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨vx1, std⟩, 'ax': ⟨0, inc⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨g(vx)1, std⟩} 
+            ╰── (3, 0):{'t': ⟨(t1, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(0, inf), inc⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                ├── (4, 0):{'t': ⟨t2, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(0, inf), inc⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │   ╰── (5, 0):{'t': ⟨(t2, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(0, inf), inc⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │       ╰── (6, 0):{'t': ⟨t3, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │           ├── (7, 0):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │           ├── (7, 1):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax1, inf), inc⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │           │   ╰── (8, 0):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │           ╰── (7, 2):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(0, ax1), dec⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │               ├── (8, 1):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨x1, std⟩, 'vx': ⟨0, inc⟩, 'ax': ⟨(0, ax1), dec⟩, 'f(x)': ⟨f(x)1, std⟩, 'g(vx)': ⟨0, dec⟩} 
+                │               ╰── (8, 2):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                ├── (4, 1):{'t': ⟨t2, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │   ├── (5, 1):{'t': ⟨(t2, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │   ├── (5, 2):{'t': ⟨(t2, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax1, inf), inc⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │   │   ╰── (6, 1):{'t': ⟨t3, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │   │       ├── (7, 3):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │   │       ├── (7, 4):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax2, inf), inc⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │   │       │   ╰── (8, 3):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │   │       ╰── (7, 5):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax1, ax2), dec⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │   │           ├── (8, 4):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, dec⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │   │           ├── (8, 5):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨x1, std⟩, 'vx': ⟨0, inc⟩, 'ax': ⟨ax1, dec⟩, 'f(x)': ⟨f(x)1, std⟩, 'g(vx)': ⟨0, dec⟩} 
+                │   │           ├── (8, 6):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │   │           ├── (8, 7):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨x1, std⟩, 'vx': ⟨0, inc⟩, 'ax': ⟨(ax1, ax2), dec⟩, 'f(x)': ⟨f(x)1, std⟩, 'g(vx)': ⟨0, dec⟩} 
+                │   │           ╰── (8, 8):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │   ╰── (5, 3):{'t': ⟨(t2, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(0, ax1), dec⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │       ├── (6, 2):{'t': ⟨t3, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨x1, std⟩, 'vx': ⟨0, inc⟩, 'ax': ⟨(0, ax1), dec⟩, 'f(x)': ⟨f(x)1, std⟩, 'g(vx)': ⟨0, dec⟩} 
+                │       │   ╰── (7, 6):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(x1, 0), inc⟩, 'vx': ⟨(0, inf), inc⟩, 'ax': ⟨(0, ax1), dec⟩, 'f(x)': ⟨(f(x)1, 0), inc⟩, 'g(vx)': ⟨(-inf, 0), dec⟩} 
+                │       │       ╰── (8, 9):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(x1, 0), inc⟩, 'vx': ⟨vx2, std⟩, 'ax': ⟨0, dec⟩, 'f(x)': ⟨(f(x)1, 0), inc⟩, 'g(vx)': ⟨g(vx)2, std⟩} 
+                │       ╰── (6, 3):{'t': ⟨t3, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │           ├── (7, 7):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │           ├── (7, 8):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax2, ax1), inc⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │           │   ├── (8, 10):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, inc⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │           │   ├── (8, 11):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │           │   ╰── (8, 12):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │           ╰── (7, 9):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(0, ax2), dec⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                │               ├── (8, 13):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨x1, std⟩, 'vx': ⟨0, inc⟩, 'ax': ⟨(0, ax2), dec⟩, 'f(x)': ⟨f(x)1, std⟩, 'g(vx)': ⟨0, dec⟩} 
+                │               ╰── (8, 14):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                ╰── (4, 2):{'t': ⟨t2, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    ├── (5, 4):{'t': ⟨(t2, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │   ╰── (6, 4):{'t': ⟨t3, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │       ├── (7, 10):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │       ├── (7, 11):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax1, inf), inc⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │       │   ╰── (8, 15):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │       ╰── (7, 12):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(0, ax1), dec⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │           ├── (8, 16):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨x1, std⟩, 'vx': ⟨0, inc⟩, 'ax': ⟨(0, ax1), dec⟩, 'f(x)': ⟨f(x)1, std⟩, 'g(vx)': ⟨0, dec⟩} 
+                    │           ╰── (8, 17):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    ├── (5, 5):{'t': ⟨(t2, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax1, inf), inc⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │   ├── (6, 5):{'t': ⟨t3, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax1, inf), inc⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │   │   ╰── (7, 13):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax1, inf), inc⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │   │       ╰── (8, 18):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │   ├── (6, 6):{'t': ⟨t3, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │   │   ├── (7, 14):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │   │   ├── (7, 15):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax2, inf), inc⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │   │   │   ╰── (8, 19):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │   │   ╰── (7, 16):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax1, ax2), dec⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │   │       ├── (8, 20):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, dec⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │   │       ├── (8, 21):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨x1, std⟩, 'vx': ⟨0, inc⟩, 'ax': ⟨ax1, dec⟩, 'f(x)': ⟨f(x)1, std⟩, 'g(vx)': ⟨0, dec⟩} 
+                    │   │       ├── (8, 22):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │   │       ├── (8, 23):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨x1, std⟩, 'vx': ⟨0, inc⟩, 'ax': ⟨(ax1, ax2), dec⟩, 'f(x)': ⟨f(x)1, std⟩, 'g(vx)': ⟨0, dec⟩} 
+                    │   │       ╰── (8, 24):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │   ╰── (6, 7):{'t': ⟨t3, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │       ├── (7, 17):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │       │   ╰── (8, 25):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │       ├── (7, 18):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax2, inf), inc⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │       │   ├── (8, 26):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax2, inf), inc⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │       │   ├── (8, 27):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │       │   ╰── (8, 28):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │       ╰── (7, 19):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax1, ax2), dec⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} -> (4, 2)
+                    │           ├── (8, 29):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, dec⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │           ├── (8, 30):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, dec⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │           ├── (8, 31):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │           ├── (8, 32):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax1, ax2), dec⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │           ├── (8, 33):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    │           ╰── (8, 34):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                    ╰── (5, 6):{'t': ⟨(t2, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(0, ax1), dec⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                        ├── (6, 8):{'t': ⟨inf, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, std⟩, 'vx': ⟨0, std⟩, 'ax': ⟨0, std⟩, 'f(x)': ⟨0, std⟩, 'g(vx)': ⟨0, std⟩} 
+                        ├── (6, 9):{'t': ⟨t3, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, std⟩, 'vx': ⟨0, std⟩, 'ax': ⟨0, std⟩, 'f(x)': ⟨0, std⟩, 'g(vx)': ⟨0, std⟩} 
+                        ├── (6, 10):{'t': ⟨t3, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(0, ax1), dec⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                        │   ╰── (7, 20):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(0, ax1), dec⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                        │       ├── (8, 35):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨x1, std⟩, 'vx': ⟨0, inc⟩, 'ax': ⟨(0, ax1), dec⟩, 'f(x)': ⟨f(x)1, std⟩, 'g(vx)': ⟨0, dec⟩} 
+                        │       ╰── (8, 36):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                        ├── (6, 11):{'t': ⟨t3, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                        │   ├── (7, 21):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                        │   ├── (7, 22):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax2, ax1), inc⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                        │   │   ├── (8, 37):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, inc⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                        │   │   ├── (8, 38):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                        │   │   ╰── (8, 39):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                        │   ╰── (7, 23):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(0, ax2), dec⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                        │       ├── (8, 40):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨x1, std⟩, 'vx': ⟨0, inc⟩, 'ax': ⟨(0, ax2), dec⟩, 'f(x)': ⟨f(x)1, std⟩, 'g(vx)': ⟨0, dec⟩} 
+                        │       ╰── (8, 41):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(-inf, 0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨(-inf, 0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                        ╰── (6, 12):{'t': ⟨t3, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                            ├── (7, 24):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                            │   ╰── (8, 42):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax2, std⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                            ├── (7, 25):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax2, ax1), inc⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} -> (4, 2)
+                            │   ├── (8, 43):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, inc⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                            │   ├── (8, 44):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, inc⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                            │   ├── (8, 45):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax1, std⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                            │   ├── (8, 46):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(ax2, ax1), inc⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                            │   ├── (8, 47):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                            │   ╰── (8, 48):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                            ╰── (7, 26):{'t': ⟨(t3, inf), inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(0, ax2), dec⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                                ├── (8, 49):{'t': ⟨inf, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, std⟩, 'vx': ⟨0, std⟩, 'ax': ⟨0, std⟩, 'f(x)': ⟨0, std⟩, 'g(vx)': ⟨0, std⟩} 
+                                ├── (8, 50):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, std⟩, 'vx': ⟨0, std⟩, 'ax': ⟨0, std⟩, 'f(x)': ⟨0, std⟩, 'g(vx)': ⟨0, std⟩} 
+                                ├── (8, 51):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨(0, ax2), dec⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                                ├── (8, 52):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨0, dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 
+                                ╰── (8, 53):{'t': ⟨t4, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(vx1, 0), inc⟩, 'ax': ⟨ax3, std⟩, 'f(x)': ⟨(0, fx0), dec⟩, 'g(vx)': ⟨(0, g(vx)1), dec⟩} 

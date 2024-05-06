@@ -2,7 +2,7 @@
 
 This is a python implementation of the Qualitative Simulation algorithm QSIM, adapted from: 
 B. Kuipers, Qualitative Reasoning: Modeling and Simulation with Incomplete Knowledge
-(Artificial Intelligence (Cambridge, Mass.)). Cambridge, Mass.: MIT Press, 1994, ISBN: 978-0-262-11190-4
+(Artificial Intelligence). Cambridge, Mass.: MIT Press, 1994, ISBN: 978-0-262-11190-4
 
 
 <!-- USAGE EXAMPLES -->
