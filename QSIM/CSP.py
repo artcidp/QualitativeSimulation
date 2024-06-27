@@ -326,7 +326,7 @@ def get_new_domains(current_parent_state,time_var,V,Q):
 
 
 
-def insert_new_landmark(current_value: qualitative_value,q_space:quantity_space,special_character=None,printing=False): 
+def insert_new_landmark(current_value: qualitative_value,q_space:quantity_space,counter_init=1,special_character=None,printing=False): 
     """
     current_value: qualitative value, includes landmarks before or after the new landmark after insertion
     Q: dictionary of all quantity spaces, with variables as keys
@@ -342,7 +342,7 @@ def insert_new_landmark(current_value: qualitative_value,q_space:quantity_space,
     try:
         new_landmark_sign=current_value.sign
 
-        i=1
+        i=counter_init
         new_landmark=landmark_value(variable+str(i)+special_character,new_landmark_sign)
         while variable+str(i)+special_character in q_space.names or new_landmark in q_space.landmarks:
             i+=1
@@ -414,20 +414,49 @@ def QSIM(V,Q,C,Trans_conditions,initial_conditions_state,time_var="t",cycle_matc
     #possible initial states
     #states_list=[]
     current_parent_list=[]
-    for i,state in enumerate(initial_psr_solutions):
-        assert state.is_complete, "Incomplete state"
-        ############################add corresponding values to initial states
+    for i,sol in enumerate(initial_psr_solutions):
+        assert sol.is_complete, "Incomplete state"
+
+        zero_derivative_vars=[var for var in set(V)-set(time_var) if sol[var].qdir==Sign(0) and sol[var].qmag_type==tuple and sol[time_var].qmag_type==landmark_value]
+        infinite_value_vars=[var for var in set(V)-set(time_var) if sol[var].qmag_type==landmark_value and sol[var].is_finite==False and sol[time_var].qmag_type==landmark_value]
+        vars_with_infinite_derivative=[c.variables[0] for c in C if (isinstance(c,Derivative) and c.variables[1] in infinite_value_vars and sol[c.variables[0]].qmag_type==tuple)] 
+        assert len(set(zero_derivative_vars)&set(vars_with_infinite_derivative))==0, "a variable has zero and infinite derivative"
+        assert time_var not in vars_with_infinite_derivative, "time variable has infinite derivative"
+        
+        initial_Q=copy.deepcopy(Q)
         initial_C=copy.deepcopy(C)
+
+        ############################insert new landmarks
+        for var in set(zero_derivative_vars)|set(vars_with_infinite_derivative):
+            new_landmark,new_qs=insert_new_landmark(sol[var],Q[var],counter_init=0,printing=False) #insert after first landmark with value 0 (only for initial state)
+            #update sol
+            sol[var]=qualitative_value(new_landmark,sol[var].qdir)
+            #update Q
+            initial_Q[var]=new_qs
+            #update C (constraints involving var)
+            for c_index,c in [(c_index,c) for c_index,c in enumerate(initial_C) if var in c.variables]: #constraints in which var participates
+                
+                #update var quantity space in the constraint
+                c_qs_list=[new_qs if qs.variable==var else qs for qs in c.quantity_spaces] #use new qspace (can be repeated)
+                
+                #update c
+                new_c=copy.deepcopy(c)
+                new_c.update_quantity_spaces(c_qs_list)
+                
+                #update new_C
+                initial_C=[new_c if index==c_index else constraint for index,constraint in enumerate(initial_C)]
+
+
+        ############################add corresponding values to initial states
         for c in initial_C:
             try:
-                evaluation=c.evaluate_state(state,add_if_satisfies=True)
+                evaluation=c.evaluate_state(sol,add_if_satisfies=True)
                 assert evaluation, f"solution state didn't stasify constraint {c}"
             except Exception as e:
-                raise ValueError(f"Error evaluating {c} with {state}\n and q_spaces {c.quantity_spaces}")
-        system_state={"State":state,"Q":Q,"C":initial_C,"loc":(0,i),"cycle_loc":None}
+                raise ValueError(f"Error evaluating {c} with {sol}\n and q_spaces {c.quantity_spaces}")
+        system_state={"State":sol,"Q":initial_Q,"C":initial_C,"loc":(0,i),"cycle_loc":None}
         #states_list.append(system_state)
         current_parent_list.append(Node(system_state,parent=root))
-
 
     for lvl in range(max_depth-1):
         print(lvl)

@@ -1,2 +1,2 @@
-(-1, 0):{'t': ⟨t0, None⟩, 'dt': ⟨None, None⟩, 'x': ⟨0, None⟩, 'vx': ⟨0, None⟩, 'ax': ⟨0, None⟩, 'f(x)': ⟨0, None⟩, 'g(vx)': ⟨0, None⟩} 
+(-1, 0):{'t': ⟨t0, None⟩, 'dt': ⟨None, None⟩, 'x': ⟨0, None⟩, 'vx': ⟨0, None⟩, 'ax': ⟨None, None⟩, 'f(x)': ⟨None, None⟩, 'g(vx)': ⟨None, None⟩} 
 └── (0, 0):{'t': ⟨t0, inc⟩, 'dt': ⟨1, std⟩, 'x': ⟨0, std⟩, 'vx': ⟨0, std⟩, 'ax': ⟨0, std⟩, 'f(x)': ⟨0, std⟩, 'g(vx)': ⟨0, std⟩} 

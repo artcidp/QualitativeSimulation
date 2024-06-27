@@ -1,4 +1,4 @@
-(-1, 0):{'t': ⟨t0, None⟩, 'x': ⟨x0, None⟩, 'vx': ⟨0, None⟩, 'ax': ⟨ax0, None⟩, 'dt': ⟨None, None⟩} 
+(-1, 0):{'t': ⟨t0, None⟩, 'x': ⟨x0, None⟩, 'vx': ⟨0, None⟩, 'ax': ⟨None, None⟩, 'dt': ⟨None, None⟩} 
 ╰── (0, 0):{'t': ⟨t0, inc⟩, 'x': ⟨x0, std⟩, 'vx': ⟨0, dec⟩, 'ax': ⟨ax0, std⟩, 'dt': ⟨1, std⟩} 
     ╰── (1, 0):{'t': ⟨(t0, inf), inc⟩, 'x': ⟨(0, x0), dec⟩, 'vx': ⟨(-inf, 0), dec⟩, 'ax': ⟨(ax0, 0), inc⟩, 'dt': ⟨1, std⟩} 
         ╰── (2, 0):{'t': ⟨t1, inc⟩, 'x': ⟨0, dec⟩, 'vx': ⟨vx1, std⟩, 'ax': ⟨0, inc⟩, 'dt': ⟨1, std⟩} 
@@ -8,4 +8,9 @@
                         ╰── (6, 0):{'t': ⟨t3, inc⟩, 'x': ⟨0, inc⟩, 'vx': ⟨vx2, std⟩, 'ax': ⟨0, dec⟩, 'dt': ⟨1, std⟩} 
                             ╰── (7, 0):{'t': ⟨(t3, inf), inc⟩, 'x': ⟨(0, x0), inc⟩, 'vx': ⟨(0, vx2), dec⟩, 'ax': ⟨(ax0, 0), dec⟩, 'dt': ⟨1, std⟩} -> (0, 0)
                                 ├── (8, 0):{'t': ⟨t4, inc⟩, 'x': ⟨x0, inc⟩, 'vx': ⟨(0, vx2), dec⟩, 'ax': ⟨ax0, dec⟩, 'dt': ⟨1, std⟩} 
+                                │   ╰── (9, 0):{'t': ⟨(t4, inf), inc⟩, 'x': ⟨(x0, inf), inc⟩, 'vx': ⟨(0, vx2), dec⟩, 'ax': ⟨(-inf, ax0), dec⟩, 'dt': ⟨1, std⟩} 
+                                │       ╰── (10, 0):{'t': ⟨t5, inc⟩, 'x': ⟨x2, std⟩, 'vx': ⟨0, dec⟩, 'ax': ⟨ax2, std⟩, 'dt': ⟨1, std⟩} 
                                 ╰── (8, 1):{'t': ⟨t4, inc⟩, 'x': ⟨x2, std⟩, 'vx': ⟨0, dec⟩, 'ax': ⟨ax2, std⟩, 'dt': ⟨1, std⟩} 
+                                    ╰── (9, 1):{'t': ⟨(t4, inf), inc⟩, 'x': ⟨(0, x2), dec⟩, 'vx': ⟨(vx1, 0), dec⟩, 'ax': ⟨(ax2, 0), inc⟩, 'dt': ⟨1, std⟩} -> (2, 0)
+                                        ├── (10, 1):{'t': ⟨t5, inc⟩, 'x': ⟨0, dec⟩, 'vx': ⟨vx3, std⟩, 'ax': ⟨0, inc⟩, 'dt': ⟨1, std⟩} 
+                                        ╰── (10, 2):{'t': ⟨t5, inc⟩, 'x': ⟨(0, x2), dec⟩, 'vx': ⟨vx1, dec⟩, 'ax': ⟨(ax2, 0), inc⟩, 'dt': ⟨1, std⟩} 
